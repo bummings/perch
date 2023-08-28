@@ -5,6 +5,9 @@ body, h1, h2, ul, p {
   margin: 0;
   padding: 0;
 }
+a {
+    text-decoration: none;
+}
 
 .container {
     background-image: url('./img/bg.jpg');
@@ -30,6 +33,7 @@ nav ul {
 
 nav ul li a {
  color: black;
+ style
 }
 
 /* Hero Section */
