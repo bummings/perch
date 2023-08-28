@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+/* General Reset */
+body, h1, h2, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #fafafa;
+  color: white;
+}
+nav ul {
+  border: 5px solid red;
+  list-style: none;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+ color: greenyellow;
+}
+
+/* Hero Section */
+#home {
+  background-color: #eee;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* Main Section */
+#services .service {
+  background-color: #ddd;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.splashText {
+    font-family: 'Caprasimo', cursive;
+    font-size: 6rem;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  #home {
+    padding: 50px 0;
+  }
+  #services .service {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+
