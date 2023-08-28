@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins&display=swap');
 
 /* General Reset */
 body, h1, h2, ul, p {
@@ -6,13 +6,23 @@ body, h1, h2, ul, p {
   padding: 0;
 }
 
+.container {
+    background-image: url('./img/bg.jpg');
+    height: 100vh;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Poppins;
+}
+
 /* Navigation */
 nav {
-  background-color: #fafafa;
   color: white;
 }
-nav ul {
-  border: 5px solid red;
+
+nav ul {  
+  background-color: #C9D1BA;
   list-style: none;
   padding: 15px;
   display: flex;
@@ -20,14 +30,14 @@ nav ul {
 }
 
 nav ul li a {
- color: greenyellow;
+ color: black;
 }
 
 /* Hero Section */
-#home {
-  background-color: #eee;
+#splash {
+  background-color: #96FF55;
   text-align: center;
-  padding: 100px 0;
+  padding: 10rem 0;
 }
 
 /* Main Section */
