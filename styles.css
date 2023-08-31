@@ -13,21 +13,29 @@ a {
 
 
 .container {
-    background-image: url('./img/bg.jpg');
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: Poppins;
+  /* background-image: url('./img/bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Poppins;
 }
 
 /* Navigation */
 nav {
-  color: white;
+  /* overflow: hidden; */
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
 }
 
 nav ul {  
   background-color: #C9D1BA;
+  color: #101014;
   list-style: none;
   padding: 15px;
   display: flex;
@@ -35,20 +43,37 @@ nav ul {
 }
 
 nav ul li a {
- color: black;
- font-size: 1.5rem;
+  color: #101014;
+  font-size: 1.5rem;
 }
 
 /* Hero Section */
 #splash {
-  color: #66b535; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border:10px solid #66b535; */
   text-align: center;
   padding: 3rem 0;
+  background-image: url('./img/block3.png');
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+
 }
 
 .splashText {
     font-family: 'Caprasimo', cursive;
     font-size: 8rem;
+    text-shadow:
+    -1px -1px 0 #fff,
+     0   -1px 0 #fff,
+     1px -1px 0 #fff,
+     1px  0   0 #fff,
+     1px  1px 0 #fff,
+     0    1px 0 #fff,
+    -1px  1px 0 #fff,
+    -1px  0   0 #fff;
   }
 
 .logo {
@@ -57,21 +82,58 @@ nav ul li a {
 }
 
 
-
 /* Main Section */
-#services .service {
-  background-color: #ddd;
+
+.main {
+  /* border: 10px solid salmon; */
+  background-color: #fdf8df;
+}
+
+.row2long {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.row3long {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.block2 {
+  background-image: url('./img/block2.png');
+  width: 20vw;
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+}
+
+.block3 {
+  background-image: url('./img/bg.jpg');
+  width: 50vw;
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+}
+
+.block {
+  border: 3px solid #101014;
+  color: #101014;
   margin: 20px;
   padding: 20px;
   font-size: 1.5rem;
 }
 
-.serviceHeader { 
+.blockHeader { 
   font-size: 2rem;
+  color: #101014;
 }
 
-.serviceText {
+.blockText {
   font-size: 1.4rem;
+  color: #101014;
 }
 
 
@@ -81,12 +143,12 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   background-color: #c88a8a;
-  color: white;
+  color: #f5f5fa;
   padding: 1rem;
 }
 
 footer .getInTouch {
- font-size: 3rem;   
+ font-size: 2rem;   
 }
 
 footer .contactOptions {
@@ -99,7 +161,7 @@ footer .contactOptions {
 }
 
 .contactOption {
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     display: flex;
     align-items: center;
     font-size: 2rem;
