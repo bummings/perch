@@ -59,7 +59,21 @@ nav ul li a {
   /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
+}
 
+.CTA {
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.CTAHeader {
+  font-size: 5rem;
+}
+
+.CTAText {
+  font-size: 1.4rem;
+  color: #101014;
 }
 
 .splashText {
@@ -85,38 +99,28 @@ nav ul li a {
 /* Main Section */
 
 .main {
-  /* border: 10px solid salmon; */
   background-color: #fdf8df;
 }
 
-.row2long {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.hoursAndServices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  background-color: #99d89e
 }
 
-.row3long {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-
+.hours {
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.5rem;
 }
 
-.block2 {
-  background-image: url('./img/block2.png');
-  width: 20vw;
-  /* background-attachment: fixed; */
-  background-position: center;
-  background-size: cover;
+.location {
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.5rem;
 }
 
-.block3 {
-  background-image: url('./img/bg.jpg');
-  width: 50vw;
-  /* background-attachment: fixed; */
-  background-position: center;
-  background-size: cover;
-}
 
 .block {
   border: 3px solid #101014;
@@ -136,6 +140,21 @@ nav ul li a {
   color: #101014;
 }
 
+.servicesHeader {
+  font-size: 5rem;
+  font-family: 'Caprasimo', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+
+}
+
+.servicesTiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
 
 /* Footer */
 footer {
