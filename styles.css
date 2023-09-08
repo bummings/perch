@@ -170,9 +170,14 @@ nav ul li a {
   text-align: center;
   padding: 3rem 0;
   background-image: url('./img/perch2.jpg');
+}
+
+#splash2, #splash3 {
+  position: relative;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height:100vh;
 }
 
 #services {
@@ -193,9 +198,6 @@ nav ul li a {
   text-align: center;
   padding: 3rem 0;
   background-image: url('./img/perch3.jpg');
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
 }
 
 /* Contact */
