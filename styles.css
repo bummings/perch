@@ -216,7 +216,6 @@ nav ul li a {
 }
 
 .event {
-  border: 5px solid blue;
   display: flex;  
   flex-direction: row;
   align-items: flex-start;
@@ -226,7 +225,7 @@ nav ul li a {
 }
 
 .eventFlyer {
-  width: 60rem;
+  width: 70rem;
   height: 30rem;
   padding: 1rem;
 }
@@ -242,10 +241,12 @@ nav ul li a {
 
 .eventDescriptionTitle {
   font-size: 3rem;
+  font-weight: bold;
 }
 
 .eventDescriptionText {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 
