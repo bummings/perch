@@ -200,6 +200,55 @@ nav ul li a {
   background-image: url('./img/perch3.jpg');
 }
 
+/* events */
+#events {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #E4B845;
+  padding: 2rem;
+}
+
+.eventGroup {
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.event {
+  border: 5px solid blue;
+  display: flex;  
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 2.5rem;
+  
+}
+
+.eventFlyer {
+  width: 60rem;
+  height: 30rem;
+  padding: 1rem;
+}
+
+.eventDescription {
+  display: flex;
+  flex-direction: column;
+  color: #101014;
+  margin: 2rem;
+  padding: 2rem;
+  font-size: 5rem;
+}
+
+.eventDescriptionTitle {
+  font-size: 3rem;
+}
+
+.eventDescriptionText {
+  font-size: 1.5rem;
+}
+
+
 /* Contact */
 .contact {
   display: flex;
