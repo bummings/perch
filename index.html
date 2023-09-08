@@ -12,14 +12,13 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#events">Events</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hoursAndLocation">Contact</a></li>
         </ul>
       </nav>
 
       <!-- Hero Section -->
       <section id="splash">
-        <!-- <img src="./img/logo.png" class="logo" alt="Perch logo" /> -->
-        <h1 class="splashText">Perch Plants</h1>
+        <h1 class="splashText">Perch Plants<br />& Odds & Ends</h1>
       </section>
 
       <!-- Main Section -->
@@ -28,28 +27,42 @@
           <h2 class="CTAHeader">
             A ridiculous shop <br />in Phoenixville, PA!
           </h2>
-          <p class="CTAText">Growin' like a weed since 2023</p>
         </div>
 
+        <div id="splash2"></div>
+
         <!-- Services -->
-        <div class="servicesHeader">Services</div>
-        <div class="services">
+        <div id="services">
+          <div class="sectionHeader">Services</div>
           <div class="servicesTiles">
             <div class="block">
               <h2 class="blockHeader">Local Delivery</h2>
               <p class="blockText">
-                Free delivery within 10 miles of the shop ($30 minimum order, $5
-                delivery if under minimum!) $10 delivery fee 10-20 miles ($30
-                minimum order)
+                <ul>
+                  <li class="blockTextBullet">
+                    Free delivery within 10 miles of the shop ($30 minimum order, $5
+                    delivery if under minimum!) 
+                  </li>
+                  <li class="blockTextBullet">
+                    $10 delivery fee 10-20 miles ($30
+                    minimum order)
+                  </li>
+                </ul>
               </p>
             </div>
 
             <div class="block">
               <h2 class="blockHeader">Repotting</h2>
               <p class="blockText">
-                FREE with purchase of pot and plant together! 4" - $4 6-8" - $6
-                10-12" - $8 14" and above - $20
+                FREE with purchase of pot and plant together!
               </p>
+              <p class="blockText">
+                4": $4 <br />
+                6-8": $6<br />
+                10-12": $8<br />
+                14" and above: $20<br/>
+              </p>
+              <p class="blockText">Succulent garden: $15</p>
             </div>
 
             <div class="block">
@@ -99,86 +112,71 @@
                 best in your space.
               </p>
             </div>
-
-            <div class="block">
-              <h2 class="blockHeader">Repotting</h2>
-              <p class="blockText">
-                FREE with purchase of pot and plant together! 4" - $4 6-8" - $6
-                10-12" - $8 14" and above - $20
-              </p>
-            </div>
           </div>
         </div>
       </main>
 
-      <div class="hoursAndServices">
-        <div class="hours">
-          <h2 class="blockHeader">Hours</h2>
-          <p class="blockText">
-            Wednesday 12P-6P <br />Thursday 10A-6P <br />Friday 10A-6P
-            <br />Saturday 9A-7P <br />Sunday 10A-3P <br /><em
-              >Closed Monday, Tuesday</em
-            >
-          </p>
-        </div>
+      <div id="splash3"></div>
 
-        <!-- Contact -->
-        <div class="location">
-          <div class="mapouter">
-            <div class="gmap_canvas">
-              <iframe
-                width="350"
-                height="350"
-                id="gmap_canvas"
-                src="https://maps.google.com/maps?q=322%20Bridge%20Street,%20Phoenixville%20PA%2019460&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-              ></iframe
-              ><a href="https://123movies-i.net"></a><br /><style>
-                .mapouter {
-                  position: relative;
-                  text-align: right;
-                  height: 350px;
-                  width: 350px;
-                }</style
-              ><a href="https://www.embedgooglemap.net"></a
-              ><style>
-                .gmap_canvas {
-                  overflow: hidden;
-                  background: none !important;
-                  height: 350px;
-                  width: 350px;
-                }
-              </style>
-            </div>
+      <!-- Hours and Location -->
+      <div id="hoursAndLocation">
+        <div class="sectionHeader">Hours and Location</div>
+        <div class="hoursAndLocationTiles">
+          <div class="hours">
+            <h2 class="blockHeader">We are open:</h2>
+            <p class="blockText">
+              Wednesday &nbsp;12P-6P <br />Thursday &nbsp;10A-6P <br />Friday
+              &nbsp;10A-6P <br />Saturday &nbsp;9A-7P <br />Sunday &nbsp;10A-3P
+              <br /><em>Closed Monday, Tuesday</em>
+            </p>
           </div>
-          <h2 class="blockText">
-            322 Bridge Street<br />Phoenixville, PA<br />19460
-          </h2>
+
+          <div class="location">
+            <h2 class="blockHeader">We are located:</h2>
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="350"
+                  height="350"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=322%20Bridge%20Street,%20Phoenixville%20PA%2019460&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://123movies-i.net"></a><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 350px;
+                    width: 350px;
+                  }</style
+                ><a href="https://www.embedgooglemap.net"></a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 350px;
+                    width: 350px;
+                  }
+                </style>
+              </div>
+            </div>
+            <h2 class="blockText">
+              322 Bridge Street<br />Phoenixville, PA<br />19460
+            </h2>
+          </div>
         </div>
       </div>
 
-      <!-- Returns -->
-      <div class="returns">
-        <div class="block">
-          <h2 class="blockHeader">Return Policy</h2>
-          <p class="blockText">
-            For Plants: A plant can be exchanged or returned for store credit
-            within 7 days. This is in the case that there is an apparent pest,
-            rot, or other health issue out of the buyer's control.
-          </p>
-          <p class="blockText">
-            For Odds & Ends: All odds and ends can be returned for a refund,
-            store credit, or exchanged within 14 days.
-          </p>
+      <!-- Contact -->
+      <div class="contact">
+        <div class="getInTouchHeader">
+          Get in Touch ✋
+          <br />
+          <img src="./img/logo.png" class="logo" alt="Perch Logo" />
         </div>
-      </div>
-
-      <!-- Footer -->
-      <footer id="contact">
-        <h3 class="getInTouch">Get in touch! ✋</h3>
         <ul class="contactOptions">
           <li class="contactOption">
             <img src="./img/ig.png" class="igLogo" alt="Instagram logo" />
@@ -187,7 +185,21 @@
           <li class="contactOption">☎️ (484) 302-7352</li>
           <li class="contactOption">✉️ hi@perchperchperch.com</li>
         </ul>
-      </footer>
+      </div>
+
+      <!-- Returns -->
+      <div class="returns">
+        <h2 class="returnsHeader">Return Policy</h2>
+        <p class="returnsText">
+          For Plants: A plant can be exchanged or returned for store credit
+          within 7 days. This is in the case that there is an apparent pest,
+          rot, or other health issue out of the buyer's control.
+        </p>
+        <p class="returnsText">
+          For Odds & Ends: All odds and ends can be returned for a refund, store
+          credit, or exchanged within 14 days.
+        </p>
+      </div>
     </div>
   </body>
 </html>

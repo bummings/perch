@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins&display=swap');
 
+html{
+  scroll-behavior:smooth
+}
+
 /* General Reset */
 body, h1, h2, ul, p {
   margin: 0;
@@ -27,14 +31,12 @@ a {
 
 /* Navigation */
 nav {
-  /* overflow: hidden; */
-  /* position: fixed; */
   top: 0;
   width: 100%;
 }
 
 nav ul {  
-  background-color: #C9D1BA;
+  background-color: #E4B845;
   color: #101014;
   list-style: none;
   padding: 15px;
@@ -52,14 +54,33 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border:10px solid #66b535; */
   text-align: center;
   padding: 3rem 0;
-  background-image: url('./img/block3.png');
-  /* background-attachment: fixed; */
+  background-image: url('./img/perch4.jpg');
   background-position: center;
   background-size: cover;
+  height: 50vh;
 }
+
+.splashText {
+  font-family: 'Caprasimo', cursive;
+  font-size: 9rem;
+  text-shadow:
+  -1px -1px 0 #fff,
+   0   -1px 0 #fff,
+   1px -1px 0 #fff,
+   1px  0   0 #fff,
+   1px  1px 0 #fff,
+   0    1px 0 #fff,
+  -1px  1px 0 #fff,
+  -1px  0   0 #fff;
+}
+
+.logo {
+  height: 75%;
+  width: 60%;
+}
+
 
 .CTA {
   margin: 20px;
@@ -68,7 +89,7 @@ nav ul li a {
 }
 
 .CTAHeader {
-  font-size: 5rem;
+  font-size: 5.3rem;
 }
 
 .CTAText {
@@ -76,24 +97,6 @@ nav ul li a {
   color: #101014;
 }
 
-.splashText {
-    font-family: 'Caprasimo', cursive;
-    font-size: 8rem;
-    text-shadow:
-    -1px -1px 0 #fff,
-     0   -1px 0 #fff,
-     1px -1px 0 #fff,
-     1px  0   0 #fff,
-     1px  1px 0 #fff,
-     0    1px 0 #fff,
-    -1px  1px 0 #fff,
-    -1px  0   0 #fff;
-  }
-
-.logo {
-    height: 70%;
-    width: 70%;
-}
 
 
 /* Main Section */
@@ -102,11 +105,16 @@ nav ul li a {
   background-color: #fdf8df;
 }
 
-.hoursAndServices {
+#hoursAndLocation {
+  background-color: #99d89e;
+  padding: 2rem;
+
+}
+
+.hoursAndLocationTiles {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  background-color: #99d89e
 }
 
 .hours {
@@ -131,8 +139,9 @@ nav ul li a {
 }
 
 .blockHeader { 
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: #101014;
+  margin-bottom: 1rem;
 }
 
 .blockText {
@@ -140,14 +149,35 @@ nav ul li a {
   color: #101014;
 }
 
-.servicesHeader {
+.blockTextBullet {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.sectionHeader {
   font-size: 5rem;
   font-family: 'Caprasimo', cursive;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+  padding: 1rem;
+}
 
+#splash2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+  background-image: url('./img/perch2.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#services {
+  padding: 2rem;
+  
 }
 
 .servicesTiles {
@@ -156,31 +186,51 @@ nav ul li a {
   grid-gap: 10px;
 }
 
-/* Footer */
-footer {
+#splash3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+  background-image: url('./img/perch3.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Contact */
+.contact {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #c88a8a;
-  color: #f5f5fa;
-  padding: 1rem;
+  background-color: #fdf8df;
+  color: #101014;
+  padding: 2rem;
+  height: 30vh;
 }
 
-footer .getInTouch {
- font-size: 2rem;   
+.getInTouch {
+ font-size: 2rem;  
 }
 
-footer .contactOptions {
-    /* border: 2px solid red; */
+.getInTouchHeader {
+    font-size: 5rem;
+    font-family: 'Caprasimo', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contactOptions {
     display: flex;
     flex-direction: column;
     justify-content: center;
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .contactOption {
-    /* border: 1px solid greenyellow; */
     display: flex;
     align-items: center;
     font-size: 2rem;
@@ -191,6 +241,28 @@ footer .contactOptions {
     width: 2rem;
     height: 2rem;
     margin-right: .6rem;
+}
+
+.returns {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #E4B845;
+  color: #101014;
+  
+}
+
+.returnsHeader {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.returnsText {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 
