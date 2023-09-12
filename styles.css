@@ -105,29 +105,7 @@ nav ul li a {
   background-color: #fdf8df;
 }
 
-#hoursAndLocation {
-  background-color: #99d89e;
-  padding: 2rem;
 
-}
-
-.hoursAndLocationTiles {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-}
-
-.hours {
-  margin: 20px;
-  padding: 20px;
-  font-size: 1.5rem;
-}
-
-.location {
-  margin: 20px;
-  padding: 20px;
-  font-size: 1.5rem;
-}
 
 
 .block {
@@ -206,28 +184,45 @@ nav ul li a {
   justify-content: center;
   flex-direction: column;
   background-color: #E4B845;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .eventGroup {
-  border: 3px solid red;
   display: flex;
   flex-direction: column;
 }
 
 .event {
+  border: 1rem solid #101014;
+  margin: 1rem 0;
+}
+
+.eventHeader {
   display: flex;  
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-evenly;
-  padding: 2.5rem;
-  
+  padding: 0 1rem;
 }
 
 .eventFlyer {
-  width: 70rem;
   height: 30rem;
+  width: auto;
+}
+
+
+.eventTitle {
+  background-color: #101014;
+  color: #fdf8df;
+  font-size: 4.2rem;
+  font-weight: bold;
   padding: 1rem;
+}
+
+.eventDate {
+  background-color: #101014;
+  color: #fdf8df;
+  font-size: 2rem;
 }
 
 .eventDescription {
@@ -235,20 +230,43 @@ nav ul li a {
   flex-direction: column;
   color: #101014;
   margin: 2rem;
-  padding: 2rem;
+  padding: 0 3rem;
   font-size: 5rem;
 }
 
-.eventDescriptionTitle {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
 .eventDescriptionText {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
+
+#hoursAndLocation {
+  background-color: #99d89e;
+  padding: 2rem;
+}
+
+.hoursAndLocationTiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.hours {
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.hoursText {
+  font-size: 2.5rem;
+  color: #101014;
+}
+
+.location {
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.5rem;
+}
 
 /* Contact */
 .contact {
@@ -298,10 +316,7 @@ nav ul li a {
 .returns {
   display: flex;
   flex-direction: column;
-  padding-left: 7rem;
-  padding-right: 7rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: .5rem 7rem;
   background-color: #E4B845;
   color: #101014;
   
@@ -309,12 +324,12 @@ nav ul li a {
 
 .returnsHeader {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .returnsText {
   font-size: 1.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 
