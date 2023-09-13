@@ -134,12 +134,11 @@ nav ul li a {
 }
 
 #splash2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 3rem 0;
   background-image: url('./img/perch2.jpg');
+}
+
+#splash3 {
+  background-image: url('./img/perch3.jpg');
 }
 
 #splash2, #splash3 {
@@ -147,17 +146,10 @@ nav ul li a {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  background-size: 125%;
   height:100vh;
 }
 
-#splash3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 3rem 0;
-  background-image: url('./img/perch3.jpg');
-}
 
 
 #services {
@@ -231,6 +223,14 @@ nav ul li a {
   margin-bottom: 1rem;
 }
 
+.signUpBtn {
+  background-color: #99d89e;
+  color:#101014;
+  height: 8rem;
+  width: 20rem;
+  font-size: 4rem;
+  border: .3rem solid #101014;
+}
 
 #hoursAndLocation {
   background-color: #99d89e;
@@ -277,7 +277,7 @@ nav ul li a {
 
 .getInTouchHeader {
     font-size: 5rem;
-    font-family: 'Caprasimo', cursive;
+    font-family: 'Caprasimo';
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -341,3 +341,6 @@ nav ul li a {
 }
 
 
+
+/* account 1390022677094
+routing 031309123 */
