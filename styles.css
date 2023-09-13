@@ -440,7 +440,79 @@ nav ul li a {
   }
 }
 
-@media only screen and (max-width: 1149px) and (min-width: 950px){
+@media only screen and (max-width: 949px) and (min-width: 600px){
+  .container {
+    border: 3px solid pink;
+    width: 100vw;
+  }
+
+  .splashText {
+    font-size: 4rem;
+  }
+
+  .CTAHeader {
+    font-size: 3rem;    
+  }
+
+  .sectionHeader {
+    font-size: 3rem;
+  }
+
+  #services {
+    padding: 1rem;
+  }
+
+  .servicesTiles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4px;
+    
+  }
+
+  .blockHeader {
+    font-size: 2rem;
+  }
+
+  .blockText {
+    font-size: 1.1rem;
+  }
+
+  
+  .eventHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .eventTitle {
+    font-size: 1.5rem;
+  }
+
+  .eventFlyer {
+    height: 15rem;
+    width: auto;
+  }
+
+  .eventDescription {
+    margin: 1rem;
+    padding: 0;
+  }
+
+  .eventDescriptionText {
+    font-size: 1.1rem;
+  }
+
+  .eventDate {
+    font-size: .8rem;
+  }
+
+  .signUpBtn {
+    height: 5rem;
+    width: 14rem;
+    font-size: 2rem;
+  }
+  
   .hoursAndLocationTiles {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -450,10 +522,22 @@ nav ul li a {
   .hours {
     margin: 0;
     padding: .5rem;
+    font-size: 1.2rem;
+  }
+
+  .hoursText {
+    font-size: 1.2rem;
   }
 
   .location {
     font-size: 3rem;
+    margin: 2rem 0 0 0;
+    padding: .5rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    height: auto;
   }
 }
 
