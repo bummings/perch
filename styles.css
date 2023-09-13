@@ -326,7 +326,7 @@ nav ul li a {
 
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
@@ -338,8 +338,146 @@ nav ul li a {
     margin: 10px;
     padding: 10px;
   }
+} */
+
+@media only screen and (max-width: 3000px) and (min-width: 1275px){
+  .container {
+    border: 5px solid green;
+  }
+
 }
 
+@media only screen and (max-width: 1274px) and (min-width: 1150px){
+  .container {
+    border: 5px solid red;
+  }
+
+  #services {
+    padding: 1rem;
+  }
+
+  .servicesTiles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4px;
+  }
+
+  .blockHeader {
+    font-size: 2rem;
+  }
+
+  .blockText {
+    font-size: 1.1rem;
+  }
+
+  .contact {
+    padding: .5rem;
+  }
+}
+
+@media only screen and (max-width: 1149px) and (min-width: 950px){
+  .container {
+    border: 5px solid blue;
+  }
+
+  .sectionHeader {
+    font-size: 3rem;
+  }
+
+  #services {
+    padding: 1rem;
+  }
+
+  .servicesTiles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4px;
+  }
+
+  .blockHeader {
+    font-size: 2rem;
+  }
+
+  .blockText {
+    font-size: 1.1rem;
+  }
+
+  .eventHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .eventTitle {
+    font-size: 2.5rem;
+  }
+
+  .eventDescription {
+    margin: 1rem;
+    padding: 0;
+  }
+
+  .eventDescriptionText {
+    font-size: 1.5rem;
+  }
+
+  .hoursText {
+    font-size: 1.5rem;
+  }
+
+  .location {
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+
+  .getInTouchHeader {
+    font-size: 3rem;
+  }
+
+  .contact {
+    padding: 4px;
+  }
+}
+
+@media only screen and (max-width: 1149px) and (min-width: 950px){
+  .hoursAndLocationTiles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  } 
+
+  .hours {
+    margin: 0;
+    padding: .5rem;
+  }
+
+  .location {
+    font-size: 3rem;
+  }
+}
+
+
+
+
+
+  /* #services {
+    padding: 1rem;
+  }
+
+  .servicesTiles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+
+  .blockHeader {
+    font-size: 2rem;
+  }
+
+  .blockText {
+    font-size: 1.1rem;
+  } */
 
 
 /* media queries: 1220 */
