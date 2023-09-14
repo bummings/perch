@@ -327,16 +327,16 @@ nav ul li a {
 
 
 @media only screen and (max-width: 3000px) and (min-width: 1275px){
-  .container {
+  /* .container {
     border: 5px solid green;
-  }
+  } */
 
 }
 
 @media only screen and (max-width: 1274px) and (min-width: 1150px){
-  .container {
+  /* .container {
     border: 5px solid red;
-  }
+  } */
 
   #services {
     padding: 1rem;
@@ -362,9 +362,9 @@ nav ul li a {
 }
 
 @media only screen and (max-width: 1149px) and (min-width: 950px){
-  .container {
+  /* .container {
     border: 5px solid blue;
-  }
+  } */
 
   .sectionHeader {
     font-size: 3rem;
