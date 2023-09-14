@@ -549,6 +549,14 @@ nav ul li a {
     display: none;
   }
 
+  .CTA {
+    padding: 0;
+  }
+
+  .CTAHeader {
+    font-size: 2rem !important;
+  }
+
   .splashText {
     font-size: 3rem;
   }
@@ -570,10 +578,12 @@ nav ul li a {
     font-size: 2.8rem;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-bottom: 1rem;
   }
 
   #services {
     padding: .2rem;
+    margin: 0;
   }
 
   .servicesTiles {
