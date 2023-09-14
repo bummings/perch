@@ -550,11 +550,20 @@ nav ul li a {
   }
 
   .splashText {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .CTAHeader {
     font-size: 1rem;    
+  }
+
+  #splash2, #splash3 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    background-size: 300%;
+    height:80vh;
   }
 
   .sectionHeader {
@@ -578,11 +587,18 @@ nav ul li a {
   }
 
   .blockText {
-    font-size: .8rem;
+    font-size: 1rem;
+  }
+
+  .blockTextBullet {
+    font-size: 1rem;
   }
 
   #events {
     padding: 0;
+    overflow: scroll;
+    white-space: pre-line;
+    overflow-wrap: break-word;
   }
 
   .eventHeader {
@@ -592,13 +608,21 @@ nav ul li a {
     padding: 0;
   }
 
+  .event {
+    margin: 0;
+    padding: 0;
+  }
+
   .eventTitle {
     font-size: 1.5rem;
+    padding: none;
+    margin: none;
   }
 
   .eventFlyer {
-    width: 10rem;
-    height: auto;
+    height: 0;
+    width: 0;
+    display: none;
   }
 
   .eventDescription {
