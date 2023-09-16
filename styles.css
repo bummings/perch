@@ -440,6 +440,10 @@ nav ul li a {
     font-size: 3rem;    
   }
 
+  nav {
+    display: none;
+  }
+
   .sectionHeader {
     font-size: 3rem;
     justify-content: flex-start;
@@ -498,7 +502,7 @@ nav ul li a {
   .signUpBtn {
     height: 5rem;
     width: 14rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   
@@ -517,6 +521,7 @@ nav ul li a {
   .hoursText {
     font-size: 1.2rem;
   }
+
 
   .location {
     font-size: 3rem;
