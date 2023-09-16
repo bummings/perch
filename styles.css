@@ -503,6 +503,7 @@ nav ul li a {
     height: 5rem;
     width: 14rem;
     font-size: 1.5rem;
+    background-color: blue;
   }
 
   
@@ -657,6 +658,7 @@ nav ul li a {
     height: 5rem;
     width: 14rem;
     font-size: 1.5rem;
+    background-color: red;
   }
 
   #hoursAndLocation {
