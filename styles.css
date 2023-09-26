@@ -695,24 +695,30 @@ nav ul li a {
 
   .hours {
     margin: 0;
-    /* padding: .5rem; */
     font-size: 1.2rem;
   }
 
   .hoursText {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+    font-weight: bold;
   }
 
   .location {
-    font-size: 1.2rem;
-    /* padding: 8px; */
+    font-size: 1.7rem;
+    padding: 0 1rem;
     margin: 0;
   }
 
   .gmap_canvas {
     margin: 0;
-    padding: 0;
     height: 35rem;
+  }
+
+  .mapouter {
+    position: relative;
+    text-align: left;
+    height: 185px;
+    width: 315px;
   }
 
   .iframe-rwd  {
