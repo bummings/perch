@@ -209,6 +209,18 @@ nav ul li a {
   font-size: 2rem;
 }
 
+.soldOutStrike {
+  text-decoration: line-through;
+}
+
+.soldOut {
+  color:#101014;
+  background-color: #fdf8df;
+  font-size: 
+}
+
+
+
 .eventDescription {
   display: flex;
   flex-direction: column;
@@ -330,13 +342,14 @@ nav ul li a {
   /* .container {
     border: 5px solid green;
   } */
+  .signUpBtn {
+    font-size: 2rem;
+  }
 
 }
 
 @media only screen and (max-width: 1274px) and (min-width: 1150px){
-  /* .container {
-    border: 5px solid red;
-  } */
+  
 
   #services {
     padding: 1rem;
@@ -355,6 +368,7 @@ nav ul li a {
   .blockText {
     font-size: 1.1rem;
   }
+
 
   .contact {
     padding: .5rem;
@@ -407,6 +421,10 @@ nav ul li a {
     font-size: 1.5rem;
   }
 
+  .signUpBtn {
+    font-size: 1.5rem;
+  }
+
   .hoursText {
     font-size: 1.5rem;
   }
@@ -428,7 +446,6 @@ nav ul li a {
 
 @media only screen and (max-width: 949px) and (min-width: 600px){
   .container {
-    border: 3px solid pink;
     width: 100vw;
   }
 
@@ -503,7 +520,6 @@ nav ul li a {
     height: 5rem;
     width: 14rem;
     font-size: 1.5rem;
-    background-color: blue;
   }
 
   
@@ -620,7 +636,7 @@ nav ul li a {
   .eventHeader {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 0;
   }
 
@@ -633,6 +649,7 @@ nav ul li a {
     font-size: 1.5rem;
     padding: none;
     margin: none;
+    white-space: normal;
   }
 
   .eventFlyer {
@@ -652,13 +669,18 @@ nav ul li a {
 
   .eventDate {
     font-size: .8rem;
+    display: block;
+    flex-direction: column;
+  }
+
+  .soldOut {
+    font-size: 2rem;
   }
 
   .signUpBtn {
     height: 5rem;
     width: 14rem;
     font-size: 1.5rem;
-    background-color: red;
   }
 
   #hoursAndLocation {
