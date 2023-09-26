@@ -737,10 +737,11 @@ nav ul li a {
   .contact {
     flex-direction: column;
     height: auto;
+    padding: 1rem;
   }
 
   .contactOption {
-    font-size: .8rem;
+    font-size: 1.4rem;
   }
 
   .igLogo {
