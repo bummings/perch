@@ -730,7 +730,7 @@ nav ul li a {
     }
     
     .getInTouchHeader {
-      font-size: 3rem;
+      font-size: 2.5rem;
       padding: 0;
     }
 
@@ -745,8 +745,8 @@ nav ul li a {
   }
 
   .igLogo {
-    height: 1rem;
-    width: 1rem;
+    height: 1.8rem;
+    width: 1.8rem;
   }
 
   .returns {
