@@ -190,7 +190,7 @@ nav ul li a {
 }
 
 .eventFlyer {
-  height: 30rem;
+  height: 40rem;
   width: auto;
 }
 
@@ -216,7 +216,6 @@ nav ul li a {
 .soldOut {
   color:#101014;
   background-color: #fdf8df;
-  font-size: 
 }
 
 
@@ -236,6 +235,7 @@ nav ul li a {
 }
 
 .signUpBtn {
+  cursor: pointer;
   background-color: #99d89e;
   color:#101014;
   height: 8rem;
@@ -765,26 +765,3 @@ nav ul li a {
 }
 
 
-
-
-
-  /* #services {
-    padding: 1rem;
-  }
-
-  .servicesTiles {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-  }
-
-  .blockHeader {
-    font-size: 2rem;
-  }
-
-  .blockText {
-    font-size: 1.1rem;
-  } */
-
-
-/* media queries: 1220 */
