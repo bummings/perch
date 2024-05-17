@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+  padding-left: 20px; /* Adjust indentation */
+}
+
 
 .container {
   display: flex;
@@ -204,7 +208,7 @@ nav ul li a {
 }
 
 .eventDate {
-  background-color: ##FEF8DF;
+  background-color: #FEF8DF;
   color: #101014;
   font-size: 2rem;
 }
@@ -230,6 +234,11 @@ nav ul li a {
 }
 
 .eventDescriptionText {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.eventListText {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -421,6 +430,10 @@ nav ul li a {
     font-size: 1.5rem;
   }
 
+  .eventListText {
+    font-size: 1.5rem;
+  }
+
   .signUpBtn {
     font-size: 1.5rem;
   }
@@ -509,6 +522,10 @@ nav ul li a {
   }
 
   .eventDescriptionText {
+    font-size: 1.1rem;
+  }
+
+  .eventListText {
     font-size: 1.1rem;
   }
 
@@ -664,6 +681,10 @@ nav ul li a {
   }
 
   .eventDescriptionText {
+    font-size: 1.1rem;
+  }
+
+  .eventListText {
     font-size: 1.1rem;
   }
 
