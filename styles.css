@@ -670,9 +670,8 @@ nav ul li a {
   }
 
   .eventFlyer {
-    height: 0;
-    width: 0;
-    display: none;
+    width: 100%;
+    height: auto;
   }
 
   .eventDescription {
