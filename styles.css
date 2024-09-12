@@ -224,6 +224,18 @@ nav ul li a {
 
 
 
+li {
+  font-size: 2rem;
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+.eventUL {
+  margin-bottom: 2rem;
+}
+
+
+
 .eventDescription {
   display: flex;
   flex-direction: column;
@@ -355,6 +367,10 @@ nav ul li a {
     font-size: 2rem;
   }
 
+  li {
+    font-size: 2rem;
+  }
+
 }
 
 @media only screen and (max-width: 1274px) and (min-width: 1150px){
@@ -377,6 +393,11 @@ nav ul li a {
   .blockText {
     font-size: 1.1rem;
   }
+
+  li {
+    font-size: 2rem;
+  }
+
 
 
   .contact {
@@ -496,6 +517,10 @@ nav ul li a {
   }
 
   .blockText {
+    font-size: 1.1rem;
+  }
+
+  li {
     font-size: 1.1rem;
   }
 
@@ -636,6 +661,10 @@ nav ul li a {
   }
 
   .blockText {
+    font-size: 1rem;
+  }
+
+  li {
     font-size: 1rem;
   }
 
