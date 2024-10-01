@@ -13,6 +13,8 @@ body, h1, h2, ul, p {
 
 a {
     text-decoration: none;
+    margin: 0 !important; 
+    padding: 0 !important;
 }
 
 ul {
@@ -626,16 +628,31 @@ li {
 }
 
 @media only screen and (max-width: 599px) and (min-width:320px){
+  .eventDescriptionText {
+    white-space: normal;
+  }
+  
+  a {
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 1 !important;
+      vertical-align: top !important;
+      white-space: normal;
+  }
+
   ol {
     margin: 0 !important;
     padding: 0 !important;
     font-size: 1rem;
     list-style-position: inside;
+    white-space: normal;
   }
-  
+
   li {
     font-size: 1rem;
   }
+
+
   .container {
     width: 100vw;
   }
