@@ -641,7 +641,7 @@ li {
   }
 
   ol {
-    margin: 0 !important;
+    margin: 1rem !important;
     padding: 0 !important;
     font-size: 1rem;
     list-style-position: inside;
@@ -650,6 +650,14 @@ li {
 
   li {
     font-size: 1rem;
+    display: list-item !important;
+    line-height: 1.2;
+  }
+  
+  ul {
+    font-size: 1rem;
+    display: list-item !important;
+    line-height: 1.2;
   }
 
 
@@ -710,6 +718,7 @@ li {
 
   .blockText {
     font-size: 1rem;
+    line-height: 1rem;
   }
 
   .blockTextBullet {
