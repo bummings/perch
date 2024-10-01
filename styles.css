@@ -222,7 +222,10 @@ nav ul li a {
   background-color: #fdf8df;
 }
 
-
+ol {
+  margin: 1rem !important;
+  padding: 1rem !important;
+}
 
 li {
   font-size: 2rem;
@@ -366,6 +369,11 @@ li {
     font-size: 2rem;
   }
 
+  ol {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
   li {
     font-size: 2rem;
   }
@@ -391,6 +399,11 @@ li {
 
   .blockText {
     font-size: 1.1rem;
+  }
+
+  ol {
+    margin: 1rem;
+    padding: 1rem;
   }
 
   li {
@@ -475,6 +488,11 @@ li {
   .contact {
     padding: 4px;
   }
+
+  ol {
+    margin: 1rem;
+    padding: 1rem;
+  }
 }
 
 @media only screen and (max-width: 949px) and (min-width: 600px){
@@ -517,6 +535,11 @@ li {
 
   .blockText {
     font-size: 1.1rem;
+  }
+
+  ol {
+    margin: 1rem;
+    padding: 1rem;
   }
 
   li {
@@ -603,8 +626,17 @@ li {
 }
 
 @media only screen and (max-width: 599px) and (min-width:320px){
+  ol {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1rem;
+    list-style-position: inside;
+  }
+  
+  li {
+    font-size: 1rem;
+  }
   .container {
-    /* border: 5px solid purple; */
     width: 100vw;
   }
 
@@ -660,10 +692,6 @@ li {
   }
 
   .blockText {
-    font-size: 1rem;
-  }
-
-  li {
     font-size: 1rem;
   }
 
