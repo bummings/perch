@@ -3,7 +3,7 @@
   <head>
     <title>Perch Plants</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./form-handler.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   </head>
   <body>
@@ -322,8 +322,27 @@
         </div>
       </main>
 
-
-
+      <!-- Mailing List Signup -->
+      <div id="mailingListSignup" class="signup-section">
+        <h2 class="sectionHeader">What's Happening at Perch??</h2>
+        <p class="signupText">Sign up with your email and be the first to hear about events, sales, & new arrivals!</p>
+        <p class="blockText"><em>It is a V chill newsletter, we will not bombard you 😛</em></p>
+        <form
+          action="https://formspree.io/f/xblywvnr"
+          method="POST"
+          class="signupForm"
+        >
+          <input
+            type="email"
+            name="email"
+            class="signupInput"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="signUpBtn">Join List</button>
+        </form>
+        <p class="signupSuccess" style="display:none;">🌱 You're on the list! ✉️</p>
+      </div>
 
       <!-- Hours and Location -->
       <div id="hoursAndLocation">
@@ -341,7 +360,7 @@
           <div class="location">
             <h2 class="blockHeader">We are located:</h2>
             <h2 class="location">
-              322 Bridge Street<br />Phoenixville, PA<br />19460
+              322 Bridge Street<br />Phoenixville, PA 19460
             </h2>
             <div class="mapouter">
               <div class="gmap_canvas">

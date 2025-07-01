@@ -1213,3 +1213,103 @@ li {
     left: 0;
   }
 }
+/* Mailing List Signup */
+.signup-section {
+  background-color: #D0C9F5;
+  color: #101014;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.signupText {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.signupInput {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border: 2px solid #101014;
+  flex-grow: 1;
+  min-width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .signupForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .signupInput {
+    width: 100%;
+  }
+
+  .signUpBtn {
+    width: 100%;
+  }
+}
+/* Signup Success Animation */
+.signupSuccess {
+  display: none;
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  animation: popFade 1s ease-out forwards;
+}
+
+@keyframes popFade {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Confetti burst on signup */
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #E4B845;
+  opacity: 0.7;
+  animation: confettiFall 3s ease-out forwards;
+  border-radius: 50%;
+  z-index: 9999;
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(500px) rotate(720deg);
+    opacity: 0;
+  }
+}
