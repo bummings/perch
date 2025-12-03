@@ -1,128 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins&display=swap");
 
-html{
+:root {
+  --ink: #101014;
+  --sun: #e4b845;
+  --leaf: #99d89e;
+  --cream: #fdf8df;
+  --paper: #fef8df;
+  --headline: "Caprasimo", cursive;
+  --body: "Poppins", sans-serif;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body);
+  color: var(--ink);
+  background-color: var(--cream);
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
 
-/* General Reset */
-body, h1, h2, ul, p {
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
+ul,
+ol {
+  padding-left: 2rem;
 }
 
 a {
-    text-decoration: none;
-    margin: 0 !important; 
-    padding: 0 !important;
+  color: inherit;
+  text-decoration: none;
 }
 
-ul {
-  padding-left: 20px; /* Adjust indentation */
+img {
+  display: block;
+  max-width: 100%;
 }
-
-.blockText li {
-  list-style: none;
-  line-height: 1.4;
-  margin-bottom: 0.4rem;
-}
-
-.blockList {
-  font-size: 1rem;
-  padding-left: 1.5rem;
-  /* margin-top: 0.5rem; */
-  margin-bottom: 0;
-  list-style-type: disc;
-  /* line-height: 1.4; */
-}
-
-.blockList li {
-  margin-bottom: 0.4rem;
-}
-
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  font-family: Poppins;
+  min-height: 100vh;
+  padding-top: 7rem; /* offset for fixed nav */
 }
 
 /* Navigation */
-nav {
+.site-header nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999;
-  box-sizing: border-box;
-  background-color: #E4B845;
-  height: auto;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+  background-color: var(--sun);
 }
 
-/* Added container rule */
-/* .container {
-  padding-top: 80px;
-} */
-
-nav ul {  
-  background-color: #E4B845;
-  color: #101014;
+nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  padding: 10px;
-  box-sizing: border-box;
+  justify-content: space-around;
+  gap: 1.6rem;
+  padding: 1rem;
 }
 
 nav ul li a {
-  color: #101014;
   font-size: 1.5rem;
 }
 
-/* Hero Section */
+/* Hero */
 #splash {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 3rem 0;
-  background-image: url('./img/perch4.jpg');
+  padding: 3rem 1rem;
+  background-image: url("./img/perch4.jpg");
   background-position: center;
   background-size: cover;
   height: 50vh;
 }
 
 .splashText {
-  font-family: 'Caprasimo', cursive;
+  font-family: var(--headline);
   font-size: 9rem;
-  text-shadow:
-  -1px -1px 0 #fff,
-   0   -1px 0 #fff,
-   1px -1px 0 #fff,
-   1px  0   0 #fff,
-   1px  1px 0 #fff,
-   0    1px 0 #fff,
-  -1px  1px 0 #fff,
-  -1px  0   0 #fff;
+  text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff,
+    1px 1px 0 #fff, 0 1px 0 #fff, -1px 1px 0 #fff, -1px 0 0 #fff;
 }
-
-.logo {
-  height: 75px;
-  width: 100px;
-}
-
 
 .CTA {
-  margin: 20px;
-  padding: 20px;
-  font-size: 1.5rem;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 .CTAHeader {
@@ -130,106 +116,76 @@ nav ul li a {
 }
 
 .CTAText {
-  font-size: 1.4rem;
-  color: #101014;
+  font-size: 1.6rem;
 }
 
-
-
-/* Main Section */
-
+/* Sections */
 .main {
-  background-color: #fdf8df;
-}
-
-.block {
-  border: 6px solid #101014;
-  color: #101014;
-  margin: 20px;
-  padding: 20px;
-  font-size: 1.5rem;
-}
-
-.blockHeader { 
-  font-size: 2.3rem;
-  color: #101014;
-  margin-bottom: 1rem;
-}
-
-.blockText {
-  font-size: 1.4rem;
-  color: #101014;
-}
-
-.blockTextBullet {
-  font-size: 1.5rem;
-  margin-left: 2rem;
+  background-color: var(--cream);
 }
 
 .sectionHeader {
   font-size: 5rem;
-  font-family: 'Caprasimo', cursive;
+  font-family: var(--headline);
   display: flex;
-  flex-direction: row;
   justify-content: center;
   padding: 1rem;
   margin-bottom: 3rem;
 }
 
-#splash2 {
-  background-image: url('./img/perch2.jpg');
+.block {
+  border: 0.6rem solid var(--ink);
+  color: var(--ink);
+  margin: 2rem;
+  padding: 2rem;
+  font-size: 1.5rem;
 }
 
-#splash3 {
-  background-image: url('./img/perch3.jpg');
+.blockHeader {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
 }
 
-#splash2, #splash3 {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-size: 125%;
-  height:100vh;
+.blockText {
+  font-size: 1.4rem;
 }
 
-
-
-#services {
-  padding: 4rem;
+.blockList {
+  font-size: 1.4rem;
+  padding-left: 1.6rem;
+  margin: 0.5rem 0 0;
+  list-style: disc;
 }
 
-.servicesTiles {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+.blockList li {
+  margin-bottom: 0.4rem;
 }
 
-/* events */
+/* Events */
 #events {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  background-color: #E4B845;
-  padding: 4rem;
+  background-color: var(--sun);
+  padding: 4rem 2rem;
 }
 
 .eventGroup {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .event {
-  border: 1rem solid #101014;
-  margin: 1rem 0;
+  border: 1rem solid var(--ink);
+  background-color: var(--paper);
 }
 
 .eventHeader {
-  display: flex;  
-  flex-direction: row;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0 1rem;
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
 .eventFlyer {
@@ -237,65 +193,34 @@ nav ul li a {
   width: auto;
 }
 
-
 .eventTitle {
-  background-color: #FEF8DF;
-  color: #101014;
-  font-size: 4.2rem;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background-color: var(--paper);
   padding: 1rem;
 }
 
+.eventTitle h3 {
+  font-size: 4.2rem;
+  font-weight: bold;
+}
+
 .eventDate {
-  background-color: #FEF8DF;
-  color: #101014;
   font-size: 2rem;
 }
-
-.soldOutStrike {
-  text-decoration: line-through;
-}
-
-.soldOut {
-  color:#101014;
-  background-color: #fdf8df;
-}
-
-ol {
-  margin: 1rem !important;
-  padding: 1rem !important;
-}
-
-li {
-  font-size: 2rem;
-  margin-left: 2rem;
-}
-
-.eventUL {
-  margin-bottom: 2rem;
-}
-
-
 
 .eventDescription {
   display: flex;
   flex-direction: column;
-  color: #101014;
+  gap: 1.2rem;
+  color: var(--ink);
   margin: 2rem;
-  /* padding: 0 3rem; */
-  font-size: 5rem;
-  margin-bottom: 1rem; /* or 0 if you want it tight */
-  padding-left: 1.2rem;
-}
-
-.eventDescription ul:last-of-type {
-  margin-bottom: 0;
+  font-size: 2rem;
 }
 
 .eventDescriptionText {
   font-size: 2rem;
-  margin-bottom: 1rem;
-  padding: 0;
 }
 
 .eventListText {
@@ -305,41 +230,113 @@ li {
 
 .signUpBtn {
   cursor: pointer;
-  background-color: #99d89e;
-  color:#101014;
+  background-color: var(--leaf);
+  color: var(--ink);
   height: 8rem;
   width: 20rem;
-  font-size: 4rem;
-  border: .3rem solid #101014;
-  margin-top: 0;
+  font-size: 2.4rem;
+  border: 0.3rem solid var(--ink);
+  margin-top: 0.5rem;
 }
 
+.soldOutStrike {
+  text-decoration: line-through;
+}
+
+.soldOut {
+  color: var(--ink);
+  background-color: var(--cream);
+}
+
+/* Services */
+#services {
+  padding: 4rem 2rem;
+}
+
+.servicesTiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* Mailing List */
+#mailingListSignup {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.signupText {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.signupForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.signupInput {
+  padding: 1.2rem 1.6rem;
+  font-size: 1.6rem;
+  min-width: 24rem;
+  border: 0.2rem solid var(--ink);
+}
+
+.signupSuccess {
+  font-size: 1.5rem;
+}
+
+/* Hours and Location */
 #hoursAndLocation {
-  background-color: #99d89e;
-  padding: 4rem;
+  background-color: var(--leaf);
+  padding: 4rem 2rem;
 }
 
 .hoursAndLocationTiles {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  gap: 1rem;
 }
 
-.hours {
-  margin: 20px;
-  padding: 20px;
+.hours,
+.location {
+  margin: 2rem;
+  padding: 2rem;
   font-size: 1.5rem;
 }
 
 .hoursText {
   font-size: 2.5rem;
-  color: #101014;
 }
 
-.location {
-  margin: 20px;
-  padding: 20px;
-  font-size: 1.5rem;
+.mapouter {
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+}
+
+.iframe-rwd {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.iframe-rwd iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Contact */
@@ -347,53 +344,45 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #fdf8df;
-  color: #101014;
-  padding: 3rem;
-  height: 30vh;
-}
-
-.getInTouch {
- font-size: 2rem;  
+  align-items: center;
+  background-color: var(--cream);
+  color: var(--ink);
+  padding: 3rem 2rem;
+  gap: 2rem;
 }
 
 .getInTouchHeader {
-    font-size: 5rem;
-    font-family: 'Caprasimo';
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
+  font-size: 5rem;
+  font-family: var(--headline);
 }
 
 .contactOptions {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style: none;
-    font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  list-style: none;
+  font-size: 1.6rem;
 }
 
 .contactOption {
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
 }
 
 .igLogo {
-    width: 2rem;
-    height: 2rem;
-    margin-right: .6rem;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.6rem;
 }
 
+/* Returns (hidden in markup, kept for quick toggle) */
 .returns {
   display: flex;
   flex-direction: column;
-  padding: .5rem 7rem;
-  background-color: #E4B845;
-  color: #101014;
-  
+  padding: 0.5rem 7rem;
+  background-color: var(--sun);
+  color: var(--ink);
 }
 
 .returnsHeader {
@@ -403,614 +392,13 @@ li {
 
 .returnsText {
   font-size: 1.3rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-
-
-@media only screen and (max-width: 3000px) and (min-width: 1275px){
-  /* .container {
-    border: 5px solid green;
-  } */
-  .signUpBtn {
-    font-size: 2rem;
-  }
-
-  ol {
-    margin: 1rem;
-    padding: 1rem;
-  }
-
-  li {
-    font-size: 2rem;
-  }
-
-}
-
-@media only screen and (max-width: 1274px) and (min-width: 1150px){
-  
-
-  #services {
-    padding: 1rem;
-  }
-
-  .servicesTiles {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 4px;
-  }
-
-  .blockHeader {
-    font-size: 2rem;
-  }
-
-  .blockText {
-    font-size: 1.1rem;
-  }
-
-  ol {
-    margin: 1rem;
-    padding: 1rem;
-  }
-
-  li {
-    font-size: 2rem;
-  }
-
-
-
-  .contact {
-    padding: .5rem;
-  }
-}
-
-@media only screen and (max-width: 1149px) and (min-width: 950px){
-  .sectionHeader {
-    font-size: 3rem;
-  }
-
-  #services {
-    padding: 1rem;
-  }
-
-  .servicesTiles {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 4px;
-  }
-
-  .blockHeader {
-    font-size: 2rem;
-  }
-
-  .blockText {
-    font-size: 1.1rem;
-  }
-
-  .eventHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .eventTitle {
-    font-size: 2.5rem;
-  }
-
-  .eventDescription {
-    margin: 1rem;
-    padding: 0;
-  }
-
-  .eventDescriptionText {
-    font-size: 1.5rem;
-  }
-
-  .eventListText {
-    font-size: 1.5rem;
-  }
-
-  .signUpBtn {
-    font-size: 1.5rem;
-  }
-
-  .hoursText {
-    font-size: 1.5rem;
-  }
-
-  .location {
-    margin: 5px;
-    padding: 5px;
-    font-size: 1.5rem;
-  }
-
-  .getInTouchHeader {
-    font-size: 3rem;
-  }
-
-  .contact {
-    padding: 4px;
-  }
-
-  ol {
-    margin: 1rem;
-    padding: 1rem;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 10px 1rem;
-    gap: 1rem;
-  }
-  
-  nav ul li a {
-    font-size: 1.2rem;
-    white-space: nowrap;
-  }
-}
-
-@media only screen and (max-width: 949px) and (min-width: 600px){
-  .container {
-    width: 100vw;
-  }
-
-  .splashText {
-    font-size: 4rem;
-  }
-
-  .CTAHeader {
-    font-size: 3rem;    
-  }
-
-  .sectionHeader {
-    font-size: 3rem;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  #services {
-    padding: 1rem;
-  }
-
-  .servicesTiles {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 4px;
-    
-  }
-
-  .blockHeader {
-    font-size: 2rem;
-  }
-
-  .blockText {
-    font-size: 1.1rem;
-  }
-
-  ol {
-    margin: 1rem;
-    padding: 1rem;
-  }
-
-  li {
-    font-size: 1.1rem;
-  }
-
-  
-  .eventHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-  }
-
-  .eventTitle {
-    font-size: 1.5rem;
-  }
-
-  .eventFlyer {
-    height: 15rem;
-    width: auto;
-  }
-
-  .eventDescription {
-    margin: 1rem;
-    padding: 0;
-  }
-
-  .eventDescriptionText {
-    font-size: 1.1rem;
-  }
-
-  .eventListText {
-    font-size: 1.1rem;
-  }
-
-  .eventDate {
-    font-size: .8rem;
-  }
-
-  .signUpBtn {
-    height: 5rem;
-    width: 14rem;
-    font-size: 1.5rem;
-  }
-
-  
-  .hoursAndLocationTiles {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-  } 
-
-  .hours {
-    margin: 0;
-    padding: .5rem;
-    font-size: 1.2rem;
-  }
-
-  .hoursText {
-    font-size: 1.2rem;
-  }
-
-
-  .location {
-    font-size: 3rem;
-    margin: 2rem 0 0 0;
-    padding: .5rem;
-  }
-
-  .contact {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .getInTouchHeader {
-    font-size: 3rem;
-    padding: 0;
-  }
-
-  .returns {
-    padding: 1rem;
-  }
-  
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    padding-left: 1.5rem;
-    gap: 0.5rem;
-    margin-bottom: 0;
-    height: auto;
-    overflow: hidden;
-  }
-  
-  nav ul li a {
-    font-size: 1.4rem;
-  }
-}
-
-@media only screen and (max-width: 599px) and (min-width:320px){
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 1.5rem;
-    width: 100%;
-    gap: 0.3rem;
-    justify-content: flex-start;
-    text-align: left;
-    margin-bottom: 0;
-    height: auto;
-    overflow: hidden;
-  }
-  
-  nav ul li a {
-    font-size: 1.3rem;
-  }
-
-  .block {
-    margin: 0.2rem 0 !important;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem !important;
-  }
-  
-  .blockText {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  .blockText p {
-    margin: 0.6rem 0 0 0;
-    padding: 0;
-    font-size: inherit;
-    line-height: inherit;
-  }
-  
-  .blockHeader {
-    margin-top: 0 !important;
-    margin-bottom: 0.3rem !important;
-    font-size: 2.6rem !important;
-    padding: 0 !important;
-  }
-
-  .blockList {
-    font-size: 1rem;
-    padding: 0 !important;
-    margin: 0.2rem 0 0 1.2rem !important;
-    list-style-type: disc;
-    line-height: 1.3;
-  }
-
-  .blockList li {
-    margin: 0.1rem 0;
-    padding: 0;
-    line-height: 1.2;
-  }
-
-  
-  .event {
-    padding: 1rem;
-    margin: 1rem 0;
-  }
-  
-  .eventGroup {
-    padding: 0 1rem;
-  }
-  
-  .eventDescription {
-    margin: 0.5rem;
-    padding: 0;
-    font-size: 1rem;
-  }
-  
-  .eventDescriptionText,
-  .eventListText {
-    font-size: 1rem;
-    line-height: 1.3;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  .sectionHeader {
-    font-size: 2rem;
-    margin: 1rem 0;
-    padding: 0 1rem;
-  }
-  
-  .eventDescriptionText {
-    white-space: normal;
-  }
-  
-  a {
-      margin: 0 !important;
-      padding: 0 !important;
-      line-height: 1 !important;
-      vertical-align: top !important;
-      white-space: normal;
-  }
-
-  ol {
-    margin: 1rem !important;
-    padding: 0 !important;
-    font-size: 1rem;
-    list-style-position: inside;
-    white-space: normal;
-  }
-
-  li {
-    font-size: 1rem;
-    display: list-item !important;
-    line-height: 1.2;
-  }
-  
-  ul {
-    font-size: 1rem;
-    padding-left: 1.5rem;
-    line-height: 1.4;
-    list-style-type: disc;
-  }
-
-
-  .container {
-    width: 100vw;
-  }
-
-  .CTA {
-    padding: 0;
-  }
-
-  .CTAHeader {
-    font-size: 2rem !important;
-  }
-
-  .splashText {
-    font-size: 3rem;
-  }
-
-  .CTAHeader {
-    font-size: 1rem;    
-  }
-
-  #splash2, #splash3 {
-    position: relative;
-    background-attachment: fixed;
-    background-position: bottom;
-    background-size: cover;
-    background-size: 300%;
-    height:80vh;
-  }
-
-  .sectionHeader {
-    font-size: 2.8rem;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-  }
-
-  #services {
-    padding: .2rem;
-    margin: 0;
-  }
-
-  .servicesTiles {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 4px;    
-  }  
-
-
-  #events {
-    padding: 0;
-    overflow: scroll;
-    white-space: pre-line;
-    overflow-wrap: break-word;
-  }
-
-  .eventHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 0;
-  }
-
-  .event {
-    margin: 0;
-    padding: 0;
-  }
-
-  .eventTitle {
-    font-size: 1.5rem;
-    padding: none;
-    margin: none;
-    white-space: normal;
-  }
-
-  .eventFlyer {
-    width: 100%;
-    height: auto;
-  }
-
-  .eventDescription {
-    margin: 1rem;
-    padding: 0;
-  }
-
-  .eventDescriptionText {
-    font-size: 1.1rem;
-  }
-
-  .eventListText {
-    font-size: 1rem;
-    line-height: 1.3;
-    margin: 0;
-    padding: 0;
-  }
-
-  .eventDate {
-    font-size: .8rem;
-    display: block;
-    flex-direction: column;
-  }
-
-  .soldOut {
-    font-size: 2rem;
-  }
-
-  .signUpBtn {
-    height: 5rem;
-    width: 14rem;
-    font-size: 1.5rem;
-  }
-
-  #hoursAndLocation {
-    padding: 0;
-  }
-  
-  .hoursAndLocationTiles {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-  } 
-
-  .hours {
-    margin: 0;
-    font-size: 1.2rem;
-  }
-
-  .hoursText {
-    font-size: 1.7rem;
-    font-weight: bold;
-  }
-
-  .location {
-    font-size: 1.7rem;
-    padding: 0 1rem;
-    margin: 0;
-  }
-
-  .gmap_canvas {
-    margin: 0;
-    height: 35rem;
-  }
-
-  .mapouter {
-    position: relative;
-    text-align: left;
-    height: 185px;
-    width: 315px;
-  }
-
-  .iframe-rwd  {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    }
-    .iframe-rwd iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    }
-    
-    .getInTouchHeader {
-      font-size: 2.5rem;
-      padding: 0;
-    }
-
-  .contact {
-    flex-direction: column;
-    height: auto;
-    padding: 1rem;
-  }
-
-  .contactOption {
-    font-size: 1.4rem;
-  }
-
-  .igLogo {
-    height: 1.8rem;
-    width: 1.8rem;
-  }
-
-  .returns {
-    padding: 1rem;
-  }
-
-  .returnsText {
-    font-size: 1rem;
-  }
-}
-
+/* Valentines layout (legacy section) */
 .valentines-event {
-  background-color: #EFBCD4;
-  color: #2D0C1A;
+  background-color: #efbcd4;
+  color: #2d0c1a;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   width: 100vw;
@@ -1021,24 +409,15 @@ li {
   align-items: center;
 }
 
-
 .header-image {
   width: 100%;
   max-width: 600px;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 3rem;
   display: flex;
   justify-content: center;
 }
 
-.header-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Text elements */
 .valentines-event h1 {
-  margin-top: 0;
   font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 1.5rem;
@@ -1068,7 +447,6 @@ li {
   margin-right: auto;
 }
 
-/* Flower images section */
 .flower-images {
   display: flex;
   justify-content: center;
@@ -1084,10 +462,9 @@ li {
   border-radius: 8px;
 }
 
-/* Order button */
 .order-button {
   display: inline-block;
-  background-color: #D8334E;
+  background-color: #d8334e;
   color: white;
   padding: 1rem 2rem;
   border-radius: 8px;
@@ -1096,12 +473,11 @@ li {
   font-size: 2.2rem;
   margin-top: 2rem;
   transition: all 0.3s ease;
-  
 }
 
 .order-button:hover {
   background-color: transparent;
-  color: #2D0C1A;
+  color: #2d0c1a;
 }
 
 .order-button:active {
@@ -1109,207 +485,237 @@ li {
 }
 
 /* Media Queries */
-@media screen and (min-width: 1200px) {
-  .valentines-event {
-    padding: 12rem 3rem;
+@media (max-width: 1149px) {
+  .sectionHeader {
+    font-size: 3.6rem;
   }
-}
 
-@media screen and (max-width: 1199px) {
-  .valentines-event {
-    padding: 10rem 2.5rem;
+  .servicesTiles,
+  .hoursAndLocationTiles {
+    grid-template-columns: 1fr;
   }
-  
-  .valentines-event h1 {
-    font-size: 2rem;
-  }
-  
-  .valentines-event h2 {
-    font-size: 1.5rem;
-  }
-  
-  .flower-images img {
-    height: 350px;
-  }
-  
-  .flower-images {
-    gap: 1.5rem;
-  }
-}
 
-@media screen and (max-width: 768px) {
-  .valentines-event {
-    padding: 8rem 2rem;
-  }
-  
-  .valentines-event h1 {
-    font-size: 1.8rem;
-  }
-  
-  .valentines-event h2 {
-    font-size: 1.3rem;
-  }
-  
-  .valentines-event h3 {
-    font-size: 1.1rem;
-  }
-  
-  .flower-images {
+  .eventHeader {
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .flower-images img {
-    height: 300px;
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  .order-button {
-    padding: 0.8rem 1.6rem;
-    font-size: 1.1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .valentines-event {
-    padding: 6rem 1.5rem;
-  }
-  
-  .valentines-event h1 {
-    font-size: 1.5rem;
-  }
-  
-  .valentines-event h2 {
-    font-size: 1.2rem;
-  }
-  
-  .valentines-event h3 {
-    font-size: 1rem;
-  }
-  
-  .flower-images img {
-    height: 250px;
-  }
-  
-  .order-button {
-    padding: 0.7rem 1.4rem;
-    font-size: 1rem;
-    width: 80%;
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 949px) {
-  nav {
-    position: static;
-  }
-}
-
-@media only screen and (min-width: 950px) {
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-}
-/* Mailing List Signup */
-.signup-section {
-  background-color: #D0C9F5;
-  color: #101014;
-  padding: 4rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-.signupText {
-  font-size: 1.6rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  max-width: 800px;
-}
-
-.signupForm {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  max-width: 600px;
-}
-
-.signupInput {
-  font-size: 1.6rem;
-  padding: 1rem;
-  border: 2px solid #101014;
-  flex-grow: 1;
-  min-width: 200px;
-}
-
-@media screen and (max-width: 600px) {
-  .signupForm {
-    flex-direction: column;
-    align-items: stretch;
+    align-items: flex-start;
   }
 
-  .signupInput {
-    width: 100%;
+  .eventFlyer {
+    height: 30rem;
+  }
+
+  .eventTitle h3 {
+    font-size: 3rem;
+  }
+
+  .eventDescription {
+    margin: 1.4rem;
+  }
+
+  .eventDescriptionText,
+  .eventListText {
+    font-size: 1.6rem;
   }
 
   .signUpBtn {
+    font-size: 1.8rem;
+    height: 6rem;
+    width: 16rem;
+  }
+
+  nav ul {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 1.3rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 949px) {
+  .container {
+    padding-top: 6rem;
+  }
+
+  .splashText {
+    font-size: 4.5rem;
+  }
+
+  .CTAHeader {
+    font-size: 3.2rem;
+  }
+
+  .sectionHeader {
+    font-size: 3rem;
+    justify-content: flex-start;
+  }
+
+  .eventFlyer {
+    height: 22rem;
+  }
+
+  .eventTitle h3 {
+    font-size: 2.4rem;
+  }
+
+  .eventDate {
+    font-size: 1.4rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .getInTouchHeader {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 699px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1.4rem;
+  }
+
+  .block {
+    margin: 0.6rem 0.4rem;
+    padding: 1.2rem;
+  }
+
+  .blockHeader {
+    font-size: 2rem;
+  }
+
+  .blockText,
+  .blockList {
+    font-size: 1.3rem;
+  }
+
+  .event {
+    padding: 1rem 0.6rem;
+  }
+
+  .eventGroup {
+    padding: 0 1rem;
+  }
+
+  .eventDescription {
+    margin: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .eventDescriptionText,
+  .eventListText {
+    font-size: 1.3rem;
+  }
+
+  .hoursAndLocationTiles {
+    grid-template-columns: 1fr;
+  }
+
+  .hours,
+  .location {
+    margin: 0.6rem 0;
+    padding: 1rem;
+  }
+
+  .hoursText {
+    font-size: 1.7rem;
+  }
+
+  .location {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+  }
+
+  .contact {
+    padding: 1.6rem;
+  }
+
+  .contactOption {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .container {
+    padding-top: 5.6rem;
+  }
+
+  .splashText {
+    font-size: 3.4rem;
+  }
+
+  .CTAHeader {
+    font-size: 2.6rem;
+  }
+
+  .sectionHeader {
+    font-size: 2.4rem;
+    margin: 1rem 0;
+  }
+
+  .eventTitle h3 {
+    font-size: 2rem;
+  }
+
+  .eventDate {
+    font-size: 1.2rem;
+  }
+
+  .eventFlyer {
+    width: 100%;
+    height: auto;
+  }
+
+  .eventDescription {
+    margin: 0.8rem 0.4rem;
+  }
+
+  .signUpBtn {
+    width: 14rem;
+    height: 5rem;
+    font-size: 1.6rem;
+  }
+
+  #events {
+    padding: 1rem;
+  }
+
+  #services {
+    padding: 1.6rem 1rem;
+  }
+
+  #hoursAndLocation {
+    padding: 2rem 1rem;
+  }
+
+  #mailingListSignup {
+    padding: 2rem 1rem;
+  }
+
+  .signupInput {
+    min-width: 100%;
+  }
+
+  .gmap_canvas {
+    height: 35rem;
+  }
+
+  .mapouter {
+    height: 18.5rem;
     width: 100%;
   }
-}
-/* Signup Success Animation */
-.signupSuccess {
-  display: none;
-  font-size: 3rem;
-  color: black;
-  text-align: center;
-  margin-top: 2rem;
-  font-weight: bold;
-  animation: popFade 1s ease-out forwards;
-}
 
-@keyframes popFade {
-  0% {
-    transform: scale(0.6);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-/* Confetti burst on signup */
-.confetti-piece {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: #E4B845;
-  opacity: 0.7;
-  animation: confettiFall 3s ease-out forwards;
-  border-radius: 50%;
-  z-index: 9999;
-}
-
-@keyframes confettiFall {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(500px) rotate(720deg);
-    opacity: 0;
+  .getInTouchHeader {
+    font-size: 2.8rem;
   }
 }
