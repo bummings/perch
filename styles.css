@@ -88,7 +88,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 
 /* Hero */
@@ -215,6 +215,13 @@ nav ul li a {
 .eventTitle h3 {
   font-size: 4.2rem;
   font-weight: bold;
+}
+
+.eventSubTitle {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: -0.3rem;
 }
 
 .eventDate {
@@ -653,6 +660,10 @@ nav ul li a {
     font-size: 3rem;
   }
 
+  .eventSubTitle {
+    font-size: 2.2rem;
+  }
+
   .eventDescription {
     margin: 1.4rem;
   }
@@ -678,7 +689,7 @@ nav ul li a {
   }
 
   nav ul li a {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     white-space: nowrap;
   }
 }
@@ -717,6 +728,10 @@ nav ul li a {
 
   .eventTitle h3 {
     font-size: 2.4rem;
+  }
+
+  .eventSubTitle {
+    font-size: 1.9rem;
   }
 
   .eventDate {
@@ -854,6 +869,10 @@ nav ul li a {
 
   .eventTitle h3 {
     font-size: 2rem;
+  }
+
+  .eventSubTitle {
+    font-size: 1.8rem;
   }
 
   .eventDate {
