@@ -131,8 +131,10 @@ nav ul li a {
 .splashText {
   font-family: var(--headline);
   font-size: 9rem;
-  text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff,
-    1px 1px 0 #fff, 0 1px 0 #fff, -1px 1px 0 #fff, -1px 0 0 #fff;
+  color: #fdf8df;
+  text-shadow: -2px -2px 0 #2a2018, 0 -2px 0 #2a2018, 2px -2px 0 #2a2018,
+    2px 0 0 #2a2018, 2px 2px 0 #2a2018, 0 2px 0 #2a2018, -2px 2px 0 #2a2018,
+    -2px 0 0 #2a2018, 0 6px 18px rgba(16, 16, 20, 0.35);
 }
 
 .CTA {
