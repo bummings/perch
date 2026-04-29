@@ -51,6 +51,26 @@ a {
   text-decoration: none;
 }
 
+.main p a,
+.main li a,
+#hoursAndLocation a,
+.contact a {
+  color: #6c2243;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(108, 34, 67, 0.45);
+  text-decoration-thickness: 0.18rem;
+  text-underline-offset: 0.22rem;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.main p a:hover,
+.main li a:hover,
+#hoursAndLocation a:hover,
+.contact a:hover {
+  color: #4d102c;
+  text-decoration-color: rgba(77, 16, 44, 0.8);
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -98,7 +118,7 @@ nav ul li a {
   align-items: center;
   text-align: center;
   padding: 3rem 1rem;
-  background-image: url("./img/perch4.jpg");
+  background-image: url("./img/splash3.png");
   background-position: center;
   background-size: cover;
   height: 50vh;
@@ -255,6 +275,37 @@ nav ul li a {
   font-size: 2.4rem;
   border: 0.3rem solid var(--ink);
   margin-top: 0.5rem;
+}
+
+.fanClubBtn {
+  min-width: 24rem;
+  height: 9.6rem;
+  padding: 1.2rem 2.4rem;
+  font-size: 2.8rem;
+  background-color: var(--sun);
+  border-width: 0.5rem;
+  box-shadow: 0.7rem 0.7rem 0 rgba(16, 16, 20, 0.18);
+}
+
+.fanClubActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.fanClubActions a {
+  display: inline-flex;
+}
+
+.fanClubBtn:hover {
+  transform: translate(-0.2rem, -0.2rem);
+  box-shadow: 1rem 1rem 0 rgba(16, 16, 20, 0.18);
+}
+
+.fanClubBtn:active {
+  transform: translate(0.1rem, 0.1rem);
+  box-shadow: 0.4rem 0.4rem 0 rgba(16, 16, 20, 0.18);
 }
 
 .soldOutStrike {
@@ -763,6 +814,12 @@ nav ul li a {
     width: 16rem;
   }
 
+  .fanClubBtn {
+    min-width: 21rem;
+    height: 8rem;
+    font-size: 2.2rem;
+  }
+
   nav ul {
     justify-content: space-between;
     gap: 1rem;
@@ -1028,6 +1085,22 @@ nav ul li a {
     width: 14rem;
     height: 5rem;
     font-size: 1.6rem;
+  }
+
+  .fanClubBtn {
+    width: auto;
+    min-width: 0;
+    height: 7rem;
+    font-size: 2rem;
+  }
+
+  .fanClubActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fanClubActions a {
+    display: flex;
   }
 
   #events {
