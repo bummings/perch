@@ -285,8 +285,7 @@ nav ul li a {
   padding: 1.2rem 2.4rem;
   font-size: 2.8rem;
   background-color: var(--sun);
-  border-width: 0.5rem;
-  box-shadow: 0.7rem 0.7rem 0 rgba(16, 16, 20, 0.18);
+  border-width: 0.3rem;
 }
 
 .fanClubActions {
@@ -298,16 +297,6 @@ nav ul li a {
 
 .fanClubActions a {
   display: inline-flex;
-}
-
-.fanClubBtn:hover {
-  transform: translate(-0.2rem, -0.2rem);
-  box-shadow: 1rem 1rem 0 rgba(16, 16, 20, 0.18);
-}
-
-.fanClubBtn:active {
-  transform: translate(0.1rem, 0.1rem);
-  box-shadow: 0.4rem 0.4rem 0 rgba(16, 16, 20, 0.18);
 }
 
 .soldOutStrike {
@@ -525,6 +514,14 @@ nav ul li a {
 .mothersDayButton:active {
   transform: translate(0.1rem, 0.1rem);
   box-shadow: 0.4rem 0.4rem 0 rgba(16, 16, 20, 0.18);
+}
+
+/* Fan Club */
+#fanClub {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: #A6EFD1;
 }
 
 /* Services */
@@ -1109,8 +1106,12 @@ nav ul li a {
     padding: 1rem;
   }
 
+  #fanClub,
   #services {
     padding: 1.6rem 1rem;
+  }
+
+  #services {
     align-items: stretch;
   }
 
