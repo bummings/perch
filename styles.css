@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Fraunces:opsz,wght@9..144,700&family=Poppins&display=swap");
 
 :root {
   --ink: #101014;
@@ -7,6 +7,7 @@
   --cream: #fdf8df;
   --paper: #fef8df;
   --headline: "Caprasimo", cursive;
+  --serif: "Fraunces", Georgia, serif;
   --body: "Poppins", sans-serif;
   font-size: 62.5%; /* 1rem = 10px */
 }
@@ -148,6 +149,72 @@ nav ul li a {
 
 .CTAText {
   font-size: 1.6rem;
+}
+
+/* News */
+.hatsNews {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #d87863;
+  color: #3b1830;
+}
+
+.hatsNewsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: clamp(3rem, 7vw, 12rem);
+  gap: 2.4rem;
+}
+
+.hatsNewsKicker {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hatsNews h2 {
+  font-family: var(--serif);
+  font-size: clamp(4.6rem, 6vw, 9rem);
+  font-weight: 700;
+  line-height: 0.95;
+}
+
+.hatsNewsButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 6.4rem;
+  padding: 1.2rem 2.6rem;
+  background-color: #3b1830;
+  color: var(--cream);
+  border: 0.3rem solid #3b1830;
+  font-size: 1.9rem;
+  font-weight: 700;
+  box-shadow: 0.7rem 0.7rem 0 #f6bfa8;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hatsNewsButton:hover,
+.hatsNewsButton:focus-visible {
+  transform: translate(-0.3rem, -0.3rem);
+  box-shadow: 1rem 1rem 0 #f6bfa8;
+}
+
+.hatsNewsButton:focus-visible {
+  outline: 0.3rem solid var(--ink);
+  outline-offset: 0.4rem;
+}
+
+.hatsNewsImage {
+  width: 100%;
+  height: 100%;
+  min-height: 80vh;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Sections */
@@ -846,6 +913,21 @@ nav ul li a {
     font-size: 3.2rem;
   }
 
+  .hatsNews {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .hatsNewsContent {
+    min-height: 48rem;
+    padding: 6rem 3rem;
+  }
+
+  .hatsNewsImage {
+    min-height: 48rem;
+    height: 65vh;
+  }
+
   .sectionHeader {
     font-size: 3rem;
     justify-content: flex-start;
@@ -1009,6 +1091,25 @@ nav ul li a {
 
   .CTAHeader {
     font-size: 2.6rem;
+  }
+
+  .hatsNewsContent {
+    min-height: 42rem;
+    padding: 4rem 2rem;
+    gap: 1.8rem;
+  }
+
+  .hatsNews h2 {
+    font-size: 4.6rem;
+  }
+
+  .hatsNewsButton {
+    width: 100%;
+  }
+
+  .hatsNewsImage {
+    min-height: 36rem;
+    height: 52vh;
   }
 
   .sectionHeader {
