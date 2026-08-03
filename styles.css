@@ -330,6 +330,19 @@ nav ul li a {
   font-size: 2rem;
 }
 
+.eventHeaderImportant {
+  background: var(--sun);
+  border: 0.4rem solid var(--ink);
+  box-shadow: 0.6rem 0.6rem 0 var(--ink);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: clamp(1.5rem, 1.8vw, 2rem);
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 1.1rem 1.4rem;
+  text-align: left;
+}
+
 .eventListText {
   font-size: 2rem;
   margin-bottom: 1rem;
