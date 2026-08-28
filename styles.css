@@ -991,7 +991,7 @@ nav ul li a {
     display: block;
     color: var(--ink);
     font-family: var(--headline);
-    font-size: clamp(1.1rem, 3.5vw, 1.7rem);
+    font-size: clamp(1.3rem, 4.25vw, 2rem);
     line-height: 1;
     white-space: nowrap;
     overflow: hidden;
