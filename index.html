@@ -11,8 +11,13 @@
 <body>
   <div class="container">
     <header class="site-header">
-      <nav>
-        <ul>
+      <nav class="siteNav" aria-label="Primary navigation">
+        <a class="navBrand" href="#splash">Perch Plants &amp; Odds &amp; Ends</a>
+        <button class="navToggle" type="button" aria-expanded="false" aria-controls="primaryNavigation">
+          <span class="visuallyHidden">Toggle navigation menu</span>
+          <span class="navToggleBars" aria-hidden="true"></span>
+        </button>
+        <ul id="primaryNavigation">
           <li><a href="#events">Events</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#hoursAndLocation">Contact</a></li>
@@ -20,6 +25,7 @@
           <li><a href="https://squareup.com/gift/MLR7KPJXM16CN/order">Gift Cards</a></li>
         </ul>
       </nav>
+      <div class="navOverlay" hidden></div>
     </header>
 
     <section id="splash">
@@ -31,6 +37,13 @@
         <h2 class="CTAHeader">
           A ridiculous shop <br />in Phoenixville, PA!
         </h2>
+      </section>
+
+      <section class="fallSale" aria-labelledby="fallSaleTitle">
+        <img src="./img/hello.png" alt="Hello? Is it fall yet? Flash sale Saturday 8.29 and Sunday 8.30." class="fallSaleImage" />
+        <div class="fallSaleContent">
+          <h2 id="fallSaleTitle">This<br />weekend!!</h2>
+        </div>
       </section>
 
       <section id="news" class="hatsNews" aria-labelledby="hatsNewsTitle">
@@ -136,7 +149,7 @@
             </div>
           </article> -->
 
-          <article class="event">
+          <!-- <article class="event">
             <div class="eventHeader">
               <img src="./img/clippingswap.png" alt="Clipping Swap flyer" class="eventFlyer" />
               <div class="eventTitle">
@@ -158,7 +171,7 @@
               </div>
               <p class="eventDescriptionText">All items at Perch are 10% off on the night of the swap!</p>
             </div>
-          </article>
+          </article> -->
         </div>
       </section>
 

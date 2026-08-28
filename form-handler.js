@@ -1,4 +1,56 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const navToggle = document.querySelector('.navToggle');
+  const navOverlay = document.querySelector('.navOverlay');
+  const navigation = document.querySelector('#primaryNavigation');
+  const navBrand = document.querySelector('.navBrand');
+  const splash = document.querySelector('#splash');
+
+  if (navBrand && splash) {
+    const updateNavBrand = () => {
+      const splashBounds = splash.getBoundingClientRect();
+      const isHeroVisible = splashBounds.bottom > 0 && splashBounds.top < window.innerHeight;
+      navBrand.classList.toggle('isVisible', !isHeroVisible);
+    };
+
+    updateNavBrand();
+    window.addEventListener('scroll', updateNavBrand, { passive: true });
+    window.addEventListener('resize', updateNavBrand);
+  }
+
+  if (navToggle && navOverlay && navigation) {
+    const setNavigationOpen = (isOpen, returnFocus = false) => {
+      document.body.classList.toggle('navMenuOpen', isOpen);
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+      navOverlay.hidden = !isOpen;
+
+      if (!isOpen && returnFocus) {
+        navToggle.focus();
+      }
+    };
+
+    navToggle.addEventListener('click', () => {
+      setNavigationOpen(navToggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    navOverlay.addEventListener('click', () => setNavigationOpen(false, true));
+
+    navigation.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setNavigationOpen(false));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+        setNavigationOpen(false, true);
+      }
+    });
+
+    window.matchMedia('(min-width: 950px)').addEventListener('change', (event) => {
+      if (event.matches) {
+        setNavigationOpen(false);
+      }
+    });
+  }
+
   const form = document.querySelector('.signupForm');
   const msg = document.querySelector('#mailingListSignup .signupSuccess');
 
