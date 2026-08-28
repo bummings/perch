@@ -984,15 +984,17 @@ nav ul li a {
 
   .navBrand {
     position: absolute;
-    left: 50%;
+    /* Reserve the button's footprint so the label cannot sit beneath it. */
+    left: 1.2rem;
+    right: 7.2rem;
     z-index: 2;
     display: block;
     color: var(--ink);
     font-family: var(--headline);
-    font-size: 2.8rem;
+    font-size: clamp(1.1rem, 3.5vw, 1.7rem);
     line-height: 1;
-    transform: translateX(-50%);
     white-space: nowrap;
+    overflow: hidden;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
