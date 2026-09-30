@@ -271,6 +271,95 @@ nav ul li a {
   object-position: center;
 }
 
+/* Phoenixville Art Walk */
+.artWalkAnnouncement {
+  background-color: #dcebc9;
+  color: #142d87;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
+}
+
+.artWalkContent {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  justify-content: center;
+  padding: clamp(3rem, 7vw, 12rem);
+}
+
+.artWalkKicker {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.artWalkContent h2 {
+  font-family: var(--serif);
+  font-size: clamp(5rem, 7vw, 10rem);
+  font-weight: 700;
+  line-height: 0.9;
+}
+
+.artWalkDetails {
+  font-size: clamp(1.9rem, 2vw, 2.6rem);
+  line-height: 1.3;
+}
+
+.artWalkButton {
+  align-items: center;
+  background-color: #142d87;
+  border: 0.3rem solid #142d87;
+  box-shadow: 0.7rem 0.7rem 0 #e9503e;
+  color: var(--cream);
+  display: inline-flex;
+  font-size: 1.9rem;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 6.4rem;
+  padding: 1.2rem 2.6rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.artWalkButton:hover,
+.artWalkButton:focus-visible {
+  box-shadow: 1rem 1rem 0 #e9503e;
+  transform: translate(-0.3rem, -0.3rem);
+}
+
+.artWalkButton:focus-visible {
+  outline: 0.3rem solid var(--ink);
+  outline-offset: 0.4rem;
+}
+
+.artWalkVisual {
+  background-color: #e9503e;
+  min-height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.artWalkArtistImage {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  width: 100%;
+}
+
+.artWalkPoster {
+  background-color: var(--cream);
+  bottom: clamp(2rem, 5vw, 6rem);
+  box-shadow: 0.8rem 0.8rem 0 #142d87;
+  max-height: 50vh;
+  object-fit: contain;
+  position: absolute;
+  right: clamp(2rem, 5vw, 6rem);
+  width: min(44%, 31rem);
+}
+
 /* Sections */
 .main {
   background-color: var(--cream);
@@ -345,6 +434,48 @@ nav ul li a {
 .eventFlyer {
   height: 40rem;
   width: auto;
+}
+
+.eventFlyerPlaceholder {
+  align-items: center;
+  background: var(--leaf);
+  border: 0.4rem solid var(--ink);
+  box-shadow: 0.7rem 0.7rem 0 var(--ink);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  height: 40rem;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  width: 30rem;
+}
+
+.eventFlyerPlaceholder span,
+.eventFlyerPlaceholder em {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.eventFlyerPlaceholder strong {
+  font-family: var(--header);
+  font-size: 4.5rem;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+
+.eventFlyerPlaceholder--smudge {
+  background: #efbcd4;
+}
+
+.eventFlyerPlaceholder--basketball {
+  background: var(--sun);
+}
+
+.eventFlyerPlaceholder--prism {
+  background: #cab6e8;
 }
 
 .eventPhoto {
@@ -960,6 +1091,11 @@ nav ul li a {
     height: 30rem;
   }
 
+  .eventFlyerPlaceholder {
+    height: 30rem;
+    width: 22.5rem;
+  }
+
   .eventTitle h3 {
     font-size: 3rem;
   }
@@ -1218,6 +1354,21 @@ nav ul li a {
     height: 22rem;
   }
 
+  .eventFlyerPlaceholder {
+    height: 22rem;
+    padding: 1.2rem 1rem;
+    width: 16.5rem;
+  }
+
+  .eventFlyerPlaceholder strong {
+    font-size: 2.7rem;
+  }
+
+  .eventFlyerPlaceholder span,
+  .eventFlyerPlaceholder em {
+    font-size: 1.1rem;
+  }
+
   .eventTitle h3 {
     font-size: 2.4rem;
   }
@@ -1445,6 +1596,12 @@ nav ul li a {
     height: auto;
   }
 
+  .eventFlyerPlaceholder {
+    aspect-ratio: 3 / 4;
+    height: auto;
+    width: 100%;
+  }
+
   .eventDescription {
     margin: 0.8rem 0.4rem;
   }
@@ -1511,5 +1668,57 @@ nav ul li a {
 
   .getInTouchHeader {
     font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 949px) {
+  .artWalkAnnouncement {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .artWalkContent {
+    min-height: 48rem;
+    padding: 6rem 3rem;
+  }
+
+  .artWalkVisual {
+    min-height: 58rem;
+  }
+
+  .artWalkPoster {
+    bottom: 3rem;
+    right: 3rem;
+    width: min(44%, 28rem);
+  }
+}
+
+@media (max-width: 479px) {
+  .artWalkContent {
+    gap: 1.8rem;
+    min-height: 42rem;
+    padding: 4rem 2rem;
+  }
+
+  .artWalkContent h2 {
+    font-size: clamp(4.6rem, 16vw, 6.6rem);
+  }
+
+  .artWalkDetails {
+    font-size: 1.9rem;
+  }
+
+  .artWalkButton {
+    width: 100%;
+  }
+
+  .artWalkVisual {
+    min-height: 44rem;
+  }
+
+  .artWalkPoster {
+    bottom: 1.8rem;
+    right: 1.8rem;
+    width: min(48%, 20rem);
   }
 }
